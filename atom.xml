@@ -5,7 +5,7 @@
   <subtitle><![CDATA[dongye]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-08-12T14:23:15.000Z</updated>
+  <updated>2015-08-12T15:57:11.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -20,10 +20,14 @@
     <link href="http://yoursite.com/2015/08/12/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%EF%BC%89/"/>
     <id>http://yoursite.com/2015/08/12/Linux常用命令（文件和目录）/</id>
     <published>2015-08-12T14:14:47.000Z</published>
-    <updated>2015-08-12T14:23:15.000Z</updated>
-    <content type="html"></content>
+    <updated>2015-08-12T15:57:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Linux文件目录">Linux文件目录</h1><h2 id="ls命令常用参数">ls命令常用参数</h2><pre><code>参数名称    <span class="string">| 描述      </span>
+</code></pre><p>——————- | ——————-<br>-a (—all)    | 输出包括以“.”开头的隐藏文件<br>-c            | 按最后一次修改时间排序<br>-F            | 区别目录和文件<br>-i (—inode)  | 显示每个文件的索引值<br>-l            | 按长列表输出格式显示<br>-L            | 对于链接文件，显示原文件信息<br>-o            | 在长列表格式下不要显示组名<br>-r (—reverse)| 输出文件和目录时反转排序的顺序<br>-R (—recursive)|递归的列出子目录内容<br>-s (—size)   | 输出每个文件的块大小<br>-S (—sort)   | 按文件大小排序输出<br>-t (—time)   | 按文件的修改时间排序输出<br>-v (—version)| 按文件版本排序输出</p>
+<p>如果需要，可以一次使用多个参数。多个双破折线参数必须分开输入，而多个单破折线可以组成一个字符串跟在一个单破折线后面。常见的组合是，用-a参数去列出所有文件，用-i参数列出每个文件的索引点，用-l生成一个长列表，再用-s参数列出所有文件的块大小。组合起来就是-sails参数。</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<h1 id="Linux文件目录">Linux文件目录</h1><h2 id="ls命令常用参数">ls命令常用参数</h2><pre><code>参数名称    <span class="string">| 描述      </span>
+</code></pre><p>——]]>
     </summary>
     
       <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
