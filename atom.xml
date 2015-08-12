@@ -5,7 +5,7 @@
   <subtitle><![CDATA[dongye]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-08-02T20:24:56.000Z</updated>
+  <updated>2015-08-12T14:21:28.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -16,14 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Linux常用命令（文件和目录）]]></title>
+    <link href="http://yoursite.com/2015/08/12/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%EF%BC%89/"/>
+    <id>http://yoursite.com/2015/08/12/Linux常用命令（文件和目录）/</id>
+    <published>2015-08-12T14:14:47.000Z</published>
+    <updated>2015-08-12T14:21:28.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Shell,linux" scheme="http://yoursite.com/tags/Shell-linux/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[操作系统学习——进程]]></title>
     <link href="http://yoursite.com/2015/08/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B/"/>
     <id>http://yoursite.com/2015/08/03/操作系统学习——进程/</id>
     <published>2015-08-02T20:06:09.000Z</published>
-    <updated>2015-08-02T20:24:56.000Z</updated>
-    <content type="html"></content>
+    <updated>2015-08-03T05:13:08.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> fuck[] = <span class="keyword">new</span> array;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;fuck.length;i++)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
-    
+    <![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class=]]>
     </summary>
     
       <category term="操作系统学习" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/"/>
