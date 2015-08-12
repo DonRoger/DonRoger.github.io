@@ -126,21 +126,4 @@
     
   </entry>
   
-  <entry>
-    <title><![CDATA[试试]]></title>
-    <link href="http://yoursite.com/2015/07/08/%E8%AF%95%E8%AF%95/"/>
-    <id>http://yoursite.com/2015/07/08/试试/</id>
-    <published>2015-07-07T16:52:07.000Z</published>
-    <updated>2015-08-01T19:40:35.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="any" scheme="http://yoursite.com/tags/any/"/>
-    
-      <category term="试试" scheme="http://yoursite.com/categories/%E8%AF%95%E8%AF%95/"/>
-    
-  </entry>
-  
 </feed>
