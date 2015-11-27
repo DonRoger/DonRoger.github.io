@@ -185,6 +185,72 @@
           
           
             
+              <a class="post-title-link" href="/2015/11/27/Scala学习随记（一）/" itemprop="url">
+                Scala学习随记（一）
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-11-27T22:41:06+08:00" content="2015-11-27">
+            2015-11-27
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="Scala_构造器">Scala 构造器</h1><h2 id="主构造器">主构造器</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Person(val name : String,val age : Int)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">object OOPInScala</span><br><span class="line">&#123;</span><br><span class="line">  def main(args : Array[String])</span><br><span class="line">  &#123;</span><br><span class="line">    val p = new Person("Rocky",27)</span><br><span class="line">    println(p.name + p.age)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>主构造器的特点：  </p>
+<p>1.主构造器直接跟在类名后面<strong>（Person）</strong>，主构造器中的参数被默认编译为类的字段<br>2.主构造器执行时会执行类中的所有不包含在方法体<strong>（def）</strong>中的语句<br>3.主构造器参数必须用val或者var声明，否则编译器默认编译为private[this]  </p>
+<h2 id="附属构造器">附属构造器</h2><p>1.附属构造器用this声明<br>2.附属构造器中必须调用主构造器或其他附属构造器</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Person(var name : String,val age : Int)</span><br><span class="line">&#123;</span><br><span class="line">  var gender : String = ""</span><br><span class="line">  def this(name : String,age : Int,gender : String)</span><br><span class="line">  &#123;</span><br><span class="line">    this(name,age)</span><br><span class="line">    this.gender = gender</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">object OOPInScala</span><br><span class="line">&#123;</span><br><span class="line">  def main(args : Array[String])</span><br><span class="line">  &#123;</span><br><span class="line">    val p = new Person("Rocky",27,"male")</span><br><span class="line">    println(p.name + p.age + p.gender)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/11/16/协方差矩阵/" itemprop="url">
                 协方差矩阵
               </a>
@@ -592,7 +658,7 @@
 
       
         
-          <span itemprop="articleBody"><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> fuck[] = <span class="keyword">new</span> array;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;fuck.length;i++)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+          <span itemprop="articleBody"></span>
         
       
     </div>
@@ -645,7 +711,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -659,7 +725,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

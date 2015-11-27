@@ -5,7 +5,7 @@
   <subtitle><![CDATA[dongye]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-11-16T15:51:57.000Z</updated>
+  <updated>2015-11-27T15:03:45.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Scala学习随记（一）]]></title>
+    <link href="http://yoursite.com/2015/11/27/Scala%E5%AD%A6%E4%B9%A0%E9%9A%8F%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/2015/11/27/Scala学习随记（一）/</id>
+    <published>2015-11-27T14:41:06.000Z</published>
+    <updated>2015-11-27T15:03:45.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Scala_构造器">Scala 构造器</h1><h2 id="主构造器">主构造器</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Person(val name : String,val age : Int)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">object OOPInScala</span><br><span class="line">&#123;</span><br><span class="line">  def main(args : Array[String])</span><br><span class="line">  &#123;</span><br><span class="line">    val p = new Person("Rocky",27)</span><br><span class="line">    println(p.name + p.age)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>主构造器的特点：  </p>
+<p>1.主构造器直接跟在类名后面<strong>（Person）</strong>，主构造器中的参数被默认编译为类的字段<br>2.主构造器执行时会执行类中的所有不包含在方法体<strong>（def）</strong>中的语句<br>3.主构造器参数必须用val或者var声明，否则编译器默认编译为private[this]  </p>
+<h2 id="附属构造器">附属构造器</h2><p>1.附属构造器用this声明<br>2.附属构造器中必须调用主构造器或其他附属构造器</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Person(var name : String,val age : Int)</span><br><span class="line">&#123;</span><br><span class="line">  var gender : String = ""</span><br><span class="line">  def this(name : String,age : Int,gender : String)</span><br><span class="line">  &#123;</span><br><span class="line">    this(name,age)</span><br><span class="line">    this.gender = gender</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">object OOPInScala</span><br><span class="line">&#123;</span><br><span class="line">  def main(args : Array[String])</span><br><span class="line">  &#123;</span><br><span class="line">    val p = new Person("Rocky",27,"male")</span><br><span class="line">    println(p.name + p.age + p.gender)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Scala_构造器">Scala 构造器</h1><h2 id="主构造器">主构造器</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</s]]>
+    </summary>
+    
+      <category term="Scala" scheme="http://yoursite.com/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[协方差矩阵]]></title>
@@ -59,7 +79,7 @@
     <link href="http://yoursite.com/2015/08/13/mac%E8%BD%AF%E4%BB%B6%E5%A4%87%E5%BF%98/"/>
     <id>http://yoursite.com/2015/08/13/mac软件备忘/</id>
     <published>2015-08-13T10:45:21.000Z</published>
-    <updated>2015-08-13T10:58:14.000Z</updated>
+    <updated>2015-11-26T14:07:25.000Z</updated>
     <content type="html"><![CDATA[<h1 id="已安装">已安装</h1><p><strong>Archiver</strong>:好用的rar解压软件<br><strong>boom</strong>: 音效增强<br><strong>coderunner</strong>: 十分精彩的编程软件，一些小的想法可以使用这个软件写，不需要经过复杂的环境搭建<br><strong>istatmenus</strong>:电脑环境参数监测<br><strong>Parallels Desktop</strong>:虚拟机(无破解版)<br><strong>readkit</strong>:rss订阅阅读软件<br><strong>sublinetext</strong>:文本编辑器<br><strong>teamviewer</strong>:远程桌面，短小精悍<br><strong>caffeine</strong>: 不让mac休眠<br><strong>encrypto</strong>: 加密软件<br><strong>cheatsheet</strong>: 显示每个软件的快捷键，用法：长安command键<br><strong>pasteasy</strong>: 电脑和手机间互传，非常方便<br><strong>Dash</strong>: 程序员向，文档</p>
 ]]></content>
     <summary type="html">
@@ -79,7 +99,7 @@
     <link href="http://yoursite.com/2015/08/12/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%EF%BC%89/"/>
     <id>http://yoursite.com/2015/08/12/Linux常用命令（文件和目录）/</id>
     <published>2015-08-12T14:14:47.000Z</published>
-    <updated>2015-08-12T16:58:01.000Z</updated>
+    <updated>2015-11-26T14:07:10.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Linux文件目录">Linux文件目录</h1><h2 id="ls命令常用参数">ls命令常用参数</h2><table>
 <thead>
 <tr>
@@ -173,10 +193,10 @@
     <link href="http://yoursite.com/2015/08/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B/"/>
     <id>http://yoursite.com/2015/08/03/操作系统学习——进程/</id>
     <published>2015-08-02T20:06:09.000Z</published>
-    <updated>2015-08-03T05:13:08.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> fuck[] = <span class="keyword">new</span> array;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;fuck.length;i++)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <updated>2015-11-27T14:41:43.000Z</updated>
+    <content type="html"></content>
     <summary type="html">
-    <![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class=]]>
+    
     </summary>
     
       <category term="操作系统学习" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/"/>
