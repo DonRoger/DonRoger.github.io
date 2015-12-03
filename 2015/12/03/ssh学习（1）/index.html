@@ -45,7 +45,7 @@
 <meta property="og:site_name" content="dongye">
 <meta property="og:description" content="ssh介绍ssh为secure shell的缩写，是建立在应用层和传输层基础上，目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。使用ssh可以有效防止远程管理的信息泄露问题。
 功能（纯粘贴，然并卵）通过使用SSH，你可以把所有传输的数据进行加密。也能够防止DNS欺骗和IP欺骗。使用SSH，还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。SSH有很多功能，它既可以代">
-<meta property="og:updated_time" content="2015-12-03T14:54:02.000Z">
+<meta property="og:updated_time" content="2015-12-03T14:58:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh学习（1）">
 <meta name="twitter:description" content="ssh介绍ssh为secure shell的缩写，是建立在应用层和传输层基础上，目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。使用ssh可以有效防止远程管理的信息泄露问题。
@@ -233,12 +233,12 @@
         <span itemprop="articleBody"><h1 id="ssh介绍">ssh介绍</h1><p>ssh为secure shell的缩写，是建立在应用层和传输层基础上，目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。使用ssh可以有效防止远程管理的信息泄露问题。</p>
 <h2 id="功能（纯粘贴，然并卵）">功能（纯粘贴，然并卵）</h2><p>通过使用SSH，你可以把所有传输的数据进行加密。也能够防止DNS欺骗和IP欺骗。使用SSH，还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。SSH有很多功能，它既可以代替Telnet，又可以为FTP、PoP、甚至为PPP提供一个安全的”通道”。</p>
 <h2 id="ssh的验证">ssh的验证</h2><p>从客户端的角度看，有两种级别的验证</p>
-<h3 id="第一种级别">第一种级别</h3><p>知道账号和口令，就可以登录到远程主机，所有数据都是加密的，但不能确保连接到的主机就是你想连接的服务器，可能会有“假”服务器在冒充。</p>
-<h3 id="第二种级别">第二种级别</h3><p>密钥机制，ssh的密钥是自己创造<strong>一对</strong>密钥，并把公用密钥放在需要访问的服务器上。如果需要连接ssh服务器，客户端软件就会向服务器发送公用密钥的请求，服务器收到请求后，先在该服务器上你的主目录下寻找你的公用密匙，然后把它和你发送过来的公用密匙进行比较。如果两个密匙一致，服务器就用公用密匙加密“质询”（challenge）并把它发送给客户端软件。客户端软件收到“质询”之后就可以用你的私人密匙解密再把它发送给服务器。  </p>
+<h4 id="第一种级别">第一种级别</h4><p>知道账号和口令，就可以登录到远程主机，所有数据都是加密的，但不能确保连接到的主机就是你想连接的服务器，可能会有“假”服务器在冒充。</p>
+<h4 id="第二种级别">第二种级别</h4><p>密钥机制，ssh的密钥是自己创造<strong>一对</strong>密钥，并把公用密钥放在需要访问的服务器上。如果需要连接ssh服务器，客户端软件就会向服务器发送公用密钥的请求，服务器收到请求后，先在该服务器上你的主目录下寻找你的公用密匙，然后把它和你发送过来的公用密匙进行比较。如果两个密匙一致，服务器就用公用密匙加密“质询”（challenge）并把它发送给客户端软件。客户端软件收到“质询”之后就可以用你的私人密匙解密再把它发送给服务器。  </p>
 <h2 id="结构">结构</h2><p>SSH是由客户端和服务端的软件组成的</p>
-<h3 id="服务端">服务端</h3><p>服务端是一个<strong>守护进程？</strong>，他在后台运行并响应来自客户端的连接请求。服务端一般是sshd进程，提供了对远程连接的处理，一般包括公共密钥认证、密钥交换、对称密钥加密和非安全连接。</p>
+<h4 id="服务端">服务端</h4><p>服务端是一个<strong>守护进程？</strong>，他在后台运行并响应来自客户端的连接请求。服务端一般是sshd进程，提供了对远程连接的处理，一般包括公共密钥认证、密钥交换、对称密钥加密和非安全连接。</p>
 <h3 id="客户端">客户端</h3><p>客户端包含ssh程序以及像scp（远程拷贝）、slogin（远程登陆）、sftp（安全文件传输）等其他的应用程序。</p>
-<h2 id="工作机制">工作机制</h2><p>他们的工作机制大致是本地的客户端发送一个连接请求到远程的服务端，服务端检查申请的包和IP地址再发送密钥给SSH的客户端，本地再将密钥发回给服务端，自此连接建立。<br>一旦建立一个安全传输层连接，客户机就发送一个服务请求。当用户认证完成之后，会发送第二个服务请求。这样就允许新定义的协议可以与上述协议共存。</p>
+<h3 id="工作机制">工作机制</h3><p>他们的工作机制大致是本地的客户端发送一个连接请求到远程的服务端，服务端检查申请的包和IP地址再发送密钥给SSH的客户端，本地再将密钥发回给服务端，自此连接建立。<br>一旦建立一个安全传输层连接，客户机就发送一个服务请求。当用户认证完成之后，会发送第二个服务请求。这样就允许新定义的协议可以与上述协议共存。</p>
 <h2 id="小结">小结</h2><p>多为粘贴和照抄，主要是为了了解</p>
 </span>
       
@@ -380,7 +380,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ssh介绍"><span class="nav-number">1.</span> <span class="nav-text">ssh介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#功能（纯粘贴，然并卵）"><span class="nav-number">1.1.</span> <span class="nav-text">功能（纯粘贴，然并卵）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh的验证"><span class="nav-number">1.2.</span> <span class="nav-text">ssh的验证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一种级别"><span class="nav-number">1.2.1.</span> <span class="nav-text">第一种级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种级别"><span class="nav-number">1.2.2.</span> <span class="nav-text">第二种级别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构"><span class="nav-number">1.3.</span> <span class="nav-text">结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务端"><span class="nav-number">1.3.1.</span> <span class="nav-text">服务端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端"><span class="nav-number">1.3.2.</span> <span class="nav-text">客户端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作机制"><span class="nav-number">1.4.</span> <span class="nav-text">工作机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">1.5.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ssh介绍"><span class="nav-number">1.</span> <span class="nav-text">ssh介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#功能（纯粘贴，然并卵）"><span class="nav-number">1.1.</span> <span class="nav-text">功能（纯粘贴，然并卵）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh的验证"><span class="nav-number">1.2.</span> <span class="nav-text">ssh的验证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一种级别"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">第一种级别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二种级别"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">第二种级别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构"><span class="nav-number">1.3.</span> <span class="nav-text">结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">服务端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端"><span class="nav-number">1.3.1.</span> <span class="nav-text">客户端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作机制"><span class="nav-number">1.3.2.</span> <span class="nav-text">工作机制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">1.4.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
