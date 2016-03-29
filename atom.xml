@@ -5,7 +5,7 @@
   <subtitle><![CDATA[dongye]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-12-03T14:58:04.000Z</updated>
+  <updated>2016-03-29T04:15:59.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[pip 安装 Mysql-python 的解决办法]]></title>
+    <link href="http://yoursite.com/2016/03/29/pip-%E5%AE%89%E8%A3%85-Mysql-python-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/03/29/pip-安装-Mysql-python-的解决办法/</id>
+    <published>2016-03-28T16:00:03.000Z</published>
+    <updated>2016-03-29T04:15:59.000Z</updated>
+    <content type="html"><![CDATA[<p>在python中使用mysql需要安装mysql-python这个包<br>使用pip 安装的命令如下<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> MySQL-python</span><br></pre></td></tr></table></figure></p>
+<p>报错:<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">EnvironmentError</span>: <span class="string">mysql_config not found</span></span><br></pre></td></tr></table></figure></p>
+<p>找不到mysql_config一般是由于通过lnmp.org或者其他方式安装mysql以后mysql_config是在/usr/local/mysql/bin/里面，这里面的文件不是在任意位置都可以访问的</p>
+<p><strong>解决方法：</strong><br>执行</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s <span class="regexp">/usr/</span>local<span class="regexp">/mysql/</span>bin<span class="regexp">/mysql_config /u</span>sr<span class="regexp">/local/</span>bin<span class="regexp">/mysql_config</span></span><br></pre></td></tr></table></figure>
+<p>将mysql_config链接到/usr/local/bin目录下</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在python中使用mysql需要安装mysql-python这个包<br>使用pip 安装的命令如下<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="li]]>
+    </summary>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[致科比]]></title>
+    <link href="http://yoursite.com/2016/02/18/%E8%87%B4%E7%A7%91%E6%AF%94/"/>
+    <id>http://yoursite.com/2016/02/18/致科比/</id>
+    <published>2016-02-17T18:57:46.000Z</published>
+    <updated>2016-02-17T18:57:46.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[ssh学习（1）]]></title>
