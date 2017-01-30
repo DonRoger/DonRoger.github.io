@@ -39,19 +39,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[致科比]]></title>
-    <link href="http://yoursite.com/2016/02/18/%E8%87%B4%E7%A7%91%E6%AF%94/"/>
-    <id>http://yoursite.com/2016/02/18/致科比/</id>
-    <published>2016-02-17T18:57:46.000Z</published>
-    <updated>2016-02-17T18:57:46.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[ssh学习（1）]]></title>
     <link href="http://yoursite.com/2015/12/03/ssh%E5%AD%A6%E4%B9%A0%EF%BC%881%EF%BC%89/"/>
     <id>http://yoursite.com/2015/12/03/ssh学习（1）/</id>
@@ -78,26 +65,6 @@
       <category term="网络" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="网络" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[mac环境变量配置]]></title>
-    <link href="http://yoursite.com/2015/12/02/mac%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2015/12/02/mac环境变量配置/</id>
-    <published>2015-12-02T13:22:41.000Z</published>
-    <updated>2015-12-02T13:33:59.000Z</updated>
-    <content type="html"><![CDATA[<p>由于mac下使用的shell是zsh，所以在配置好某个环境变量，重启item2就会发现刚配置好的环境变量失效。<br>zsh在启动时自动加载的是.zshrc文件，所以可以通过修改该文件来配置永久的环境变量<br>命令行下输入<strong>vim ~/.zshrc</strong>，找到“# User configuration”部分。<br>在export PATH= xxx下配置需要的环境变量。<br><strong>注意</strong>每个环境变量是用<strong>“：”</strong>符分割的。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>由于mac下使用的shell是zsh，所以在配置好某个环境变量，重启item2就会发现刚配置好的环境变量失效。<br>zsh在启动时自动加载的是.zshrc文件，所以可以通过修改该文件来配置永久的环境变量<br>命令行下输入<strong>vim ~/.zshrc</str]]>
-    </summary>
-    
-      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
-    
-      <category term="操作系统" scheme="http://yoursite.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="mac" scheme="http://yoursite.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/mac/"/>
     
   </entry>
   
@@ -249,23 +216,6 @@
       <category term="Shell" scheme="http://yoursite.com/tags/Shell/"/>
     
       <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[操作系统学习——进程]]></title>
-    <link href="http://yoursite.com/2015/08/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B/"/>
-    <id>http://yoursite.com/2015/08/03/操作系统学习——进程/</id>
-    <published>2015-08-02T20:06:09.000Z</published>
-    <updated>2015-11-27T14:41:43.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="操作系统学习" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="操作系统" scheme="http://yoursite.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
