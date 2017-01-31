@@ -5,7 +5,7 @@
   <subtitle><![CDATA[dongye]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2016-03-29T04:17:42.000Z</updated>
+  <updated>2017-01-31T16:49:28.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[命令行中的软连接]]></title>
+    <link href="http://yoursite.com/2017/02/01/%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E7%9A%84%E8%BD%AF%E8%BF%9E%E6%8E%A5/"/>
+    <id>http://yoursite.com/2017/02/01/命令行中的软连接/</id>
+    <published>2017-01-31T16:42:08.000Z</published>
+    <updated>2017-01-31T16:49:28.000Z</updated>
+    <content type="html"><![CDATA[<p>很久没有更新hexo博客，但是新开了一个爬虫的学习笔记。但是每次通过命令行进行文章的新建之后总要再从图形界面打开markdown工具，所以想要在<strong>命令行中用macdown打开指定文件</strong>。<br>这涉及到unix系统下的软连接命令</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s <span class="regexp">/Applications/M</span>acDown.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/m</span>acdown <span class="regexp">/usr/</span>local<span class="regexp">/bin/m</span>acdown</span><br></pre></td></tr></table></figure>
+<p>通过ln -s A B (<strong>A、B为不同的路径</strong>)，将macdown的命令软连接到了常用的本地命令库中，这样之后就可以在命令行里使用macdown命令打开指定的文件</p>
+<p>同样的，也可以指定类似sublime这样的编辑器为打开方式</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s <span class="regexp">/Applications/</span>Sublime\ Text.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>subl</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>很久没有更新hexo博客，但是新开了一个爬虫的学习笔记。但是每次通过命令行进行文章的新建之后总要再从图形界面打开markdown工具，所以想要在<strong>命令行中用macdown打开指定文件</strong>。<br>这涉及到unix系统下的软连接命令</p>
+<fi]]>
+    </summary>
+    
+      <category term="命令行" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[python爬虫学习（一）]]></title>
+    <link href="http://yoursite.com/2017/02/01/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/2017/02/01/python爬虫学习（一）/</id>
+    <published>2017-01-31T16:29:20.000Z</published>
+    <updated>2017-01-31T16:41:08.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。</p>
+<h2 id="需要掌握的内容">需要掌握的内容</h2><p><strong>1.</strong>python的基本内容<br><strong>2.</strong>正则表达式<br><strong>3.</strong>xPath<br><strong>4.</strong>网页分析的各种工具<br><strong>5.</strong>并行爬虫<br><strong>6.</strong>scrapy框架<br><strong>7.</strong>redis<br><em>1、2</em>为在使用中熟悉和学习的内容。其余则要重点学习，以<strong><em>3、4、6</em></strong>最为重要。  </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="前言">前言</h1><p>虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。</p>
+<h2 id="需要掌握的内容">需要掌握的内容</h2><p><s]]>
+    </summary>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[pip 安装 Mysql-python 的解决办法]]></title>

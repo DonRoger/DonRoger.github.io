@@ -26,7 +26,7 @@
 
 
 
-  <meta name="keywords" content="Linux,Shell," />
+  <meta name="keywords" content="python,爬虫," />
 
 
 
@@ -37,130 +37,19 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Linux文件目录ls命令常用参数
-
-
-参数名称
-描述      
-
-
-
-
--a (—all)
-输出包括以“.”开头的隐藏文件
-
-
--c
-按最后一次修改时间排序
-
-
--F
-区别目录和文件
-
-
--i (—inode)
-显示每个文件的索引值
-
-
--l
-按长列表输出格式显示
-
-
--L
-对于链接文件，显示原文件信息
-
-
--o
-在长列表格式下不要显示组名
-
-
--r (—reverse)
-输出文件和目录时反转">
+<meta name="description" content="前言虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。
+需要掌握的内容1.python的基本内容2.正则表达式3.xPath4.网页分析的各种工具5.并行爬虫6.scrapy框架7.redis1、2为在使用中熟悉和学习的内容。其余则要重点学习，以3、4、6最为重要。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux常用命令（文件和目录）">
-<meta property="og:url" content="http://yoursite.com/2015/08/12/Linux常用命令（文件和目录）/index.html">
+<meta property="og:title" content="python爬虫学习（一）">
+<meta property="og:url" content="http://yoursite.com/2017/02/01/python爬虫学习（一）/index.html">
 <meta property="og:site_name" content="dongye">
-<meta property="og:description" content="Linux文件目录ls命令常用参数
-
-
-参数名称
-描述      
-
-
-
-
--a (—all)
-输出包括以“.”开头的隐藏文件
-
-
--c
-按最后一次修改时间排序
-
-
--F
-区别目录和文件
-
-
--i (—inode)
-显示每个文件的索引值
-
-
--l
-按长列表输出格式显示
-
-
--L
-对于链接文件，显示原文件信息
-
-
--o
-在长列表格式下不要显示组名
-
-
--r (—reverse)
-输出文件和目录时反转">
-<meta property="og:updated_time" content="2015-11-26T14:07:10.000Z">
+<meta property="og:description" content="前言虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。
+需要掌握的内容1.python的基本内容2.正则表达式3.xPath4.网页分析的各种工具5.并行爬虫6.scrapy框架7.redis1、2为在使用中熟悉和学习的内容。其余则要重点学习，以3、4、6最为重要。">
+<meta property="og:updated_time" content="2017-01-31T16:41:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用命令（文件和目录）">
-<meta name="twitter:description" content="Linux文件目录ls命令常用参数
-
-
-参数名称
-描述      
-
-
-
-
--a (—all)
-输出包括以“.”开头的隐藏文件
-
-
--c
-按最后一次修改时间排序
-
-
--F
-区别目录和文件
-
-
--i (—inode)
-显示每个文件的索引值
-
-
--l
-按长列表输出格式显示
-
-
--L
-对于链接文件，显示原文件信息
-
-
--o
-在长列表格式下不要显示组名
-
-
--r (—reverse)
-输出文件和目录时反转">
+<meta name="twitter:title" content="python爬虫学习（一）">
+<meta name="twitter:description" content="前言虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。
+需要掌握的内容1.python的基本内容2.正则表达式3.xPath4.网页分析的各种工具5.并行爬虫6.scrapy框架7.redis1、2为在使用中熟悉和学习的内容。其余则要重点学习，以3、4、6最为重要。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -170,7 +59,7 @@
   };
 </script>
 
-  <title> Linux常用命令（文件和目录） | dongye </title>
+  <title> python爬虫学习（一） | dongye </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -298,7 +187,7 @@
           
           
             
-              Linux常用命令（文件和目录）
+              python爬虫学习（一）
             
           
         </h1>
@@ -307,8 +196,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-08-12T22:14:47+08:00" content="2015-08-12">
-            2015-08-12
+          <time itemprop="dateCreated" datetime="2017-02-01T00:29:20+08:00" content="2017-02-01">
+            2017-02-01
           </time>
         </span>
 
@@ -317,8 +206,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Linux/" itemprop="url" rel="index">
-                  <span itemprop="name">Linux</span>
+                <a href="/categories/python/" itemprop="url" rel="index">
+                  <span itemprop="name">python</span>
                 </a>
               </span>
 
@@ -341,73 +230,8 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="Linux文件目录">Linux文件目录</h1><h2 id="ls命令常用参数">ls命令常用参数</h2><table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>描述      </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-a (—all)</td>
-<td>输出包括以“.”开头的隐藏文件</td>
-</tr>
-<tr>
-<td>-c</td>
-<td>按最后一次修改时间排序</td>
-</tr>
-<tr>
-<td>-F</td>
-<td>区别目录和文件</td>
-</tr>
-<tr>
-<td>-i (—inode)</td>
-<td>显示每个文件的索引值</td>
-</tr>
-<tr>
-<td>-l</td>
-<td>按长列表输出格式显示</td>
-</tr>
-<tr>
-<td>-L</td>
-<td>对于链接文件，显示原文件信息</td>
-</tr>
-<tr>
-<td>-o</td>
-<td>在长列表格式下不要显示组名</td>
-</tr>
-<tr>
-<td>-r (—reverse)</td>
-<td>输出文件和目录时反转排序的顺序</td>
-</tr>
-<tr>
-<td>-R (—recursive)</td>
-<td>递归的列出子目录内容</td>
-</tr>
-<tr>
-<td>-s (—size)</td>
-<td>输出每个文件的块大小</td>
-</tr>
-<tr>
-<td>-S (—sort)</td>
-<td>按文件大小排序输出</td>
-</tr>
-<tr>
-<td>-t (—time)</td>
-<td>按文件的修改时间排序输出</td>
-</tr>
-<tr>
-<td>-v (—version)</td>
-<td>按文件版本排序输出</td>
-</tr>
-</tbody>
-</table>
-<p>如果需要，可以一次使用多个参数。多个双破折线参数必须分开输入，而多个单破折线可以组成一个字符串跟在一个单破折线后面。常见的组合是，用-a参数去列出所有文件，用-i参数列出每个文件的索引点，用-l生成一个长列表，再用-s参数列出所有文件的块大小。组合起来就是-sails参数。</p>
-<h2 id="处理文件">处理文件</h2><p>创建文件命令：touch  </p>
-<p>复制文件命令：cp，cp命令需要两个参数，源对象和目标对象：<br>cp source destination</p>
-<p>重命名文件：mv file1 file2</p>
-<p>删除文件：rm file</p>
+        <span itemprop="articleBody"><h1 id="前言">前言</h1><p>虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。</p>
+<h2 id="需要掌握的内容">需要掌握的内容</h2><p><strong>1.</strong>python的基本内容<br><strong>2.</strong>正则表达式<br><strong>3.</strong>xPath<br><strong>4.</strong>网页分析的各种工具<br><strong>5.</strong>并行爬虫<br><strong>6.</strong>scrapy框架<br><strong>7.</strong>redis<br><em>1、2</em>为在使用中熟悉和学习的内容。其余则要重点学习，以<strong><em>3、4、6</em></strong>最为重要。  </p>
 </span>
       
     </div>
@@ -416,9 +240,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag">#Linux</a>
+            <a href="/tags/python/" rel="tag">#python</a>
           
-            <a href="/tags/Shell/" rel="tag">#Shell</a>
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
           
         </div>
       
@@ -427,11 +251,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/08/13/mac软件备忘/" rel="prev">mac软件备忘</a>
+              <a href="/2017/02/01/命令行中的软连接/" rel="prev">命令行中的软连接</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/29/pip-安装-Mysql-python-的解决办法/" rel="next">pip 安装 Mysql-python 的解决办法</a>
             
           </div>
         </div>
@@ -548,7 +374,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux文件目录"><span class="nav-number">1.</span> <span class="nav-text">Linux文件目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ls命令常用参数"><span class="nav-number">1.1.</span> <span class="nav-text">ls命令常用参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理文件"><span class="nav-number">1.2.</span> <span class="nav-text">处理文件</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#需要掌握的内容"><span class="nav-number">1.1.</span> <span class="nav-text">需要掌握的内容</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

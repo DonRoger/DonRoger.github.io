@@ -185,6 +185,164 @@
           
           
             
+              <a class="post-title-link" href="/2017/02/01/命令行中的软连接/" itemprop="url">
+                命令行中的软连接
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-01T00:42:08+08:00" content="2017-02-01">
+            2017-02-01
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/工具/" itemprop="url" rel="index">
+                  <span itemprop="name">工具</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>很久没有更新hexo博客，但是新开了一个爬虫的学习笔记。但是每次通过命令行进行文章的新建之后总要再从图形界面打开markdown工具，所以想要在<strong>命令行中用macdown打开指定文件</strong>。<br>这涉及到unix系统下的软连接命令</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s <span class="regexp">/Applications/M</span>acDown.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/m</span>acdown <span class="regexp">/usr/</span>local<span class="regexp">/bin/m</span>acdown</span><br></pre></td></tr></table></figure>
+<p>通过ln -s A B (<strong>A、B为不同的路径</strong>)，将macdown的命令软连接到了常用的本地命令库中，这样之后就可以在命令行里使用macdown命令打开指定的文件</p>
+<p>同样的，也可以指定类似sublime这样的编辑器为打开方式</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s <span class="regexp">/Applications/</span>Sublime\ Text.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>subl</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/01/python爬虫学习（一）/" itemprop="url">
+                python爬虫学习（一）
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-01T00:29:20+08:00" content="2017-02-01">
+            2017-02-01
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/python/" itemprop="url" rel="index">
+                  <span itemprop="name">python</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="前言">前言</h1><p>虽然了解python爬虫已经有一段时日了，但是没有深入的学习过，最近的一个项目设计到从医学数据哭上爬取相关的医学文献，所以开此博客稍作记录，同时作为学习反馈。</p>
+<h2 id="需要掌握的内容">需要掌握的内容</h2><p><strong>1.</strong>python的基本内容<br><strong>2.</strong>正则表达式<br><strong>3.</strong>xPath<br><strong>4.</strong>网页分析的各种工具<br><strong>5.</strong>并行爬虫<br><strong>6.</strong>scrapy框架<br><strong>7.</strong>redis<br><em>1、2</em>为在使用中熟悉和学习的内容。其余则要重点学习，以<strong><em>3、4、6</em></strong>最为重要。  </p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2016/03/29/pip-安装-Mysql-python-的解决办法/" itemprop="url">
                 pip 安装 Mysql-python 的解决办法
               </a>
@@ -662,21 +820,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
