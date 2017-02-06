@@ -185,6 +185,88 @@
           
           
             
+              <a class="post-title-link" href="/2017/02/06/wifi密码破解/" itemprop="url">
+                wifi密码破解
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-06T14:50:43+08:00" content="2017-02-06">
+            2017-02-06
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/工具/" itemprop="url" rel="index">
+                  <span itemprop="name">工具</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="airport">airport</h1><p>airport是linux下的无限工具命令，主要用于监听网络状况</p>
+<h1 id="aircrack-ng">aircrack-ng</h1><p>aircrack-ng 为wifi破解包，可brew install</p>
+<h1 id="破解流程">破解流程</h1><h2 id="1">1</h2><p>命令行下输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo airport <span class="operator">-s</span></span><br></pre></td></tr></table></figure></p>
+<p>获取周围的网络信息，比如wifi名称，信道，频道等</p>
+<h2 id="2">2</h2><p>从上述的网络信息中挑选所需监听的信道编号，比如信道11，命令行里输入：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo airport en0 sniff <span class="number">11</span> </span><br><span class="line">```  </span><br><span class="line">其中en0为本机的网卡号，可能为en0，也可能为en1，可ifconfig查看。  </span><br><span class="line">监听时间为<span class="number">2</span>~<span class="number">3</span>分钟 按cmd+c停止监听，监听信息为cap文件，存储在/tmp文件夹中</span><br><span class="line">##<span class="number">3</span></span><br><span class="line">下载数据字典  </span><br><span class="line">将数据字典文件与刚才监听到的cap文件放在同一个文件夹下，比如WIFI文件夹,并分别命名为<span class="number">1</span><span class="class">.txt</span>,<span class="number">1</span><span class="class">.cap</span>    </span><br><span class="line">进入wifi文件夹输入命令：</span><br></pre></td></tr></table></figure></p>
+<p>sudo aircrack-ng -w 1.txt 1.cap<br>```<br>如果出现1handshake，则输入序号即可破解成功，否则重复上述步骤</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2017/02/01/命令行中的软连接/" itemprop="url">
                 命令行中的软连接
               </a>
@@ -820,7 +902,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -834,7 +916,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
