@@ -26,7 +26,7 @@
 
 
 
-  <meta name="keywords" content="wifi," />
+  <meta name="keywords" content="Hexo,next" />
 
 
 
@@ -37,28 +37,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="airportairport是linux下的无限工具命令，主要用于监听网络状况
-aircrack-ngaircrack-ng 为wifi破解包，可brew install
-破解流程1命令行下输入：1sudo airport -s
-获取周围的网络信息，比如wifi名称，信道，频道等
-2从上述的网络信息中挑选所需监听的信道编号，比如信道11，命令行里输入：12345678sudo airport en">
+<meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wifi密码破解">
-<meta property="og:url" content="http://yoursite.com/2017/02/06/wifi密码破解/index.html">
+<meta property="og:title" content="dongye">
+<meta property="og:url" content="http://yoursite.com/2018/05/03/当我们写些什么时我们到底在写什么/index.html">
 <meta property="og:site_name" content="dongye">
-<meta property="og:description" content="airportairport是linux下的无限工具命令，主要用于监听网络状况
-aircrack-ngaircrack-ng 为wifi破解包，可brew install
-破解流程1命令行下输入：1sudo airport -s
-获取周围的网络信息，比如wifi名称，信道，频道等
-2从上述的网络信息中挑选所需监听的信道编号，比如信道11，命令行里输入：12345678sudo airport en">
-<meta property="og:updated_time" content="2017-02-07T07:12:55.000Z">
+<meta property="og:description">
+<meta property="og:updated_time" content="2018-05-03T14:07:04.146Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wifi密码破解">
-<meta name="twitter:description" content="airportairport是linux下的无限工具命令，主要用于监听网络状况
-aircrack-ngaircrack-ng 为wifi破解包，可brew install
-破解流程1命令行下输入：1sudo airport -s
-获取周围的网络信息，比如wifi名称，信道，频道等
-2从上述的网络信息中挑选所需监听的信道编号，比如信道11，命令行里输入：12345678sudo airport en">
+<meta name="twitter:title" content="dongye">
+<meta name="twitter:description">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -68,7 +56,7 @@ aircrack-ngaircrack-ng 为wifi破解包，可brew install
   };
 </script>
 
-  <title> wifi密码破解 | dongye </title>
+  <title>  | dongye </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -196,7 +184,7 @@ aircrack-ngaircrack-ng 为wifi破解包，可brew install
           
           
             
-              wifi密码破解
+              
             
           
         </h1>
@@ -205,26 +193,11 @@ aircrack-ngaircrack-ng 为wifi破解包，可brew install
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2017-02-06T14:50:43+08:00" content="2017-02-06">
-            2017-02-06
+          <time itemprop="dateCreated" datetime="2018-05-03T22:07:04+08:00" content="2018-05-03">
+            2018-05-03
           </time>
         </span>
 
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/工具/" itemprop="url" rel="index">
-                  <span itemprop="name">工具</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -239,36 +212,22 @@ aircrack-ngaircrack-ng 为wifi破解包，可brew install
       
 
       
-        <span itemprop="articleBody"><h1 id="airport">airport</h1><p>airport是linux下的无限工具命令，主要用于监听网络状况</p>
-<h1 id="aircrack-ng">aircrack-ng</h1><p>aircrack-ng 为wifi破解包，可brew install</p>
-<h1 id="破解流程">破解流程</h1><h2 id="1">1</h2><p>命令行下输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo airport <span class="operator">-s</span></span><br></pre></td></tr></table></figure></p>
-<p>获取周围的网络信息，比如wifi名称，信道，频道等</p>
-<h2 id="2">2</h2><p>从上述的网络信息中挑选所需监听的信道编号，比如信道11，命令行里输入：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo airport en0 sniff <span class="number">11</span> </span><br><span class="line">```  </span><br><span class="line">其中en0为本机的网卡号，可能为en0，也可能为en1，可ifconfig查看。  </span><br><span class="line">监听时间为<span class="number">2</span>~<span class="number">3</span>分钟 按cmd+c停止监听，监听信息为cap文件，存储在/tmp文件夹中</span><br><span class="line">##<span class="number">3</span></span><br><span class="line">下载数据字典  </span><br><span class="line">将数据字典文件与刚才监听到的cap文件放在同一个文件夹下，比如WIFI文件夹,并分别命名为<span class="number">1</span><span class="class">.txt</span>,<span class="number">1</span><span class="class">.cap</span>    </span><br><span class="line">进入wifi文件夹输入命令：</span><br></pre></td></tr></table></figure></p>
-<p>sudo aircrack-ng -w 1.txt 1.cap<br>```<br>如果出现1handshake，则输入序号即可破解成功，否则重复上述步骤</p>
-</span>
+        <span itemprop="articleBody"></span>
       
     </div>
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/wifi/" rel="tag">#wifi</a>
-          
-        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/03/当我们写些什么时我们到底在写什么/" rel="prev"></a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/01/命令行中的软连接/" rel="next">命令行中的软连接</a>
+              <a href="/2017/02/06/wifi密码破解/" rel="next">wifi密码破解</a>
             
           </div>
         </div>
@@ -385,7 +344,7 @@ aircrack-ngaircrack-ng 为wifi破解包，可brew install
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#airport"><span class="nav-number">1.</span> <span class="nav-text">airport</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#aircrack-ng"><span class="nav-number">2.</span> <span class="nav-text">aircrack-ng</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#破解流程"><span class="nav-number">3.</span> <span class="nav-text">破解流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">3.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">3.2.</span> <span class="nav-text">2</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
